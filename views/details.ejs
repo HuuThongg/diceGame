@@ -1,0 +1,16 @@
+<html>
+<h1>This movie has</h1>
+<h3>Title: <%= movie.title %></h3>
+<h3>IMDb Rating: <%= movie.rating %></h3>
+<h3>Description: <%= movie.description %></h3>
+<h3>Actors:</h3>
+<% for( let actor of movie.actors) { %>
+<p><%= actor %></p>
+<% } %>
+<h3>Genre:</h3>
+<% for( let genre of movie.genre) { %>
+<p><%= genre %></p>
+<% } %>
+<a href="<%=movie.imageURL%>"><img src="<%=movie.imageURL%>" width="240" height="480" /></a>
+
+</html>
