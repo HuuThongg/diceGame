@@ -12,7 +12,8 @@ const movieSchema = new Schema({
     description: String,
     rating: Number,
     imageURL: String,
-    dateRelease: String
+    dateRelease: String,
+    location: String
 });
 
 const Movie = mongoose.model("Movie", movieSchema, "Movie");
